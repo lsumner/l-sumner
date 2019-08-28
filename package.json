@@ -1,0 +1,25 @@
+{
+  "name": "laurasumner",
+  "version": "1.0.0",
+  "description": "practice project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lsumner/l-sumner.git"
+  },
+  "keywords": [
+    "SBA"
+  ],
+  "author": "laura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lsumner/l-sumner/issues"
+  },
+  "homepage": "https://github.com/lsumner/l-sumner#readme",
+  "devDependencies": {
+    "stylelint": "^10.1.0"
+  }
+}

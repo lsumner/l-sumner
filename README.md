@@ -33,7 +33,8 @@ There should also be links to my ##_social media sites
 
 This is a paragraph about me. I am a woman with 2 kids a dog and a bird. I am taking a coding course at Savvy Coders and will finish in November. I can't wait to learn all I can learn in these next 12 weeks. Here is my link to keep in touch and to see how I'm doing.
  
- [![alt text](https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500)](https://linkedin.com/in/laura-sumner-729750a7/)
+ [![alt text](https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500)
+ (https://linkedin.com/in/laura-sumner-729750a7/)
  
 
 
