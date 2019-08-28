@@ -1,0 +1,24 @@
+// https://gist.githubusercontent.com/manavm1990/1800b5aab55a03c7aff2a3c5150d8054/raw/178997acefc643bdec5fbe1495ba9931c052598c/.stylelintrc
+
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-prettier/recommended"
+  ]
+}
+
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "rules": {
+    }
