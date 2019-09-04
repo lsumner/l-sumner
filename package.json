@@ -21,5 +21,8 @@
   "homepage": "https://github.com/lsumner/l-sumner#readme",
   "devDependencies": {
     "stylelint": "^10.1.0"
+  },
+  "dependencies": {
+    "http-server": "^0.11.1"
   }
 }
