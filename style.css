@@ -1,6 +1,230 @@
-header{
+:root {
+  --primary: #6200ee;
+  --primary-variant: #3700b3;
+  --secondary: #03dac6;
+  --secondary-variant: #018786;
+  --background: #fff;
+  --error: #b00020;
+  --primary-text: #fff;
+  --secondary-text: #000;
+  --base-spacing: 8px;
+  --border-primary: solid var(--primary-variant) 3px;
+  --border-secondary: solid var(--secondary-variant) 3px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  padding: calc(var(--base-spacing) * 3);
+}
+
+header,
+section:nth-of-type(odd),
+footer {
+  background: var(--primary);
+  color: var(--primary-text);
+}
+
+header {
   display: flex;
-  flex-direction:  column;
+  flex-direction: column;
   align-items: center;
 }
 
+figure,
+h2 {
+  margin: 0;
+}
+
+img {
+  border-radius: 50%;
+  box-shadow: calc(var(--base-spacing) * 0.5) var(--base-spacing)
+    var(--base-spacing) black;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav li {
+  padding: var(--base-spacing) 0;
+}
+
+nav,
+section:nth-of-type(even) {
+  background: var(--secondary);
+  color: var(--secondary-text);
+}
+
+nav {
+  border-top: var(--border-secondary);
+  border-bottom: var(--border-secondary);
+  min-height: 72px;
+}
+
+footer {
+  border-top: var(--border-primary);
+  padding: calc(var(--base-spacing) * 2);
+}
+
+footer a {
+  color: white;
+}
+
+footer ul {
+  /* By default, this will do flex-direction: row; */
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a,
+nav a,
+.hero a,
+.read-more-btn {
+  /* Remove underline. */
+  text-decoration: none;
+}
+
+.hero a,
+.read-more-btn {
+  border-radius: var(--base-spacing);
+  padding: var(--base-spacing);
+}
+
+.hero a {
+  background: var(--secondary);
+}
+
+.read-more-btn {
+  background: white;
+  display: inline-block;
+  margin: var(--base-spacing) 0;
+}
+
+.fas {
+  font-size: 48px;
+}
+
+nav .fas {
+  margin: var(--base-spacing);
+  position: absolute;
+  transform: translateX(calc(100vw - var(--base-spacing) * 10));
+}
+
+.is-hidden--mobile {
+  font-size: 0;
+  height: 0;
+}
+
+.hero {
+  align-items: center;
+  background: url(https://picsum.photos/680/420) center center no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 20vh;
+  justify-content: center;
+  max-height: 420px;
+}
+
+/* Form */
+form,
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  padding: var(--base-spacing);
+}
+
+input,
+textarea {
+  border: solid thin black;
+  max-width: 80vw;
+}
+
+form div {
+  margin: var(--base-spacing);
+}
+
+input[type="submit"] {
+  background: var(--secondary);
+  border-radius: var(--base-spacing);
+  display: inline-block;
+  margin: var(--base-spacing) 0;
+  min-height: calc(var(--base-spacing) * 6);
+  max-width: calc(var(--base-spacing) * 12);
+  text-align: center;
+}
+
+/* This should apply for tablets and above! */
+@media screen and (min-width: 768px) {
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .read-more-btn {
+    align-self: center;
+    max-width: calc(var(--base-spacing) * 15);
+    text-align: center;
+  }
+
+  .hero {
+    height: 40vh;
+  }
+
+  .is-hidden--tablet {
+    font-size: 0;
+    height: 0;
+  }
+}
+
+/* This should apply for desktops and above. */
+@media screen and (min-width: 1024px) {
+  header {
+    flex-direction: row;
+    padding: calc(var(--base-spacing) * 2);
+  }
+
+  header figure {
+    margin-right: calc(var(--base-spacing) * 2);
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  section p {
+    margin-bottom: auto;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .flex-container--desktop {
+    display: flex;
+  }
+
+  .is-hidden--desktop {
+    font-size: 0;
+    height: 0;
+  }
+
+  .is-shown--desktop {
+    font-size: initial;
+  }
+}
