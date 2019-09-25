@@ -189,7 +189,10 @@ input[type="submit"] {
     font-size: 0;
     height: 0;
   }
-}
+  input.error{
+    box-shadow: 10px 5px 5px red;
+  }
+
 
 /* This should apply for desktops and above. */
 @media screen and (min-width: 1024px) {
@@ -217,6 +220,9 @@ input[type="submit"] {
 
   .flex-container--desktop {
     display: flex;
+  }
+  .flex-row--desktop {
+   flex-direction:row;
   }
 
   .is-hidden--desktop {
