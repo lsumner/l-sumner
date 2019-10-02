@@ -25,7 +25,10 @@ hiddenUL.classList.toggle("is-hidden--mobile");
 })
 
 
-
+import Header from"./componets/Header";
+import Nav from"./componets/Header";
+import Main from"./componets/Main";
+import Footer from"./componets/Footer";
 
 
 
